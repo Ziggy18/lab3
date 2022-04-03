@@ -106,7 +106,7 @@ public class ObjectUtils {
                     double z2=coordinates.get(v2).getZ()+zShift;
                     PictureUtils.TriangleZ(picture,
                             new Coordinate(coordinates.get(v0).getX()*ax/z0+x0, coordinates.get(v1).getX()*ax/z1+x0, coordinates.get(v2).getX()*ax/z2+x0),
-                            new Coordinate(coordinates.get(v0).getY()*ax/z0+y0, coordinates.get(v1).getY()*ax/z1+y0, coordinates.get(v2).getY()*ax/z2+y0),
+                            new Coordinate(coordinates.get(v0).getY()*ay/z0+y0, coordinates.get(v1).getY()*ay/z1+y0, coordinates.get(v2).getY()*ay/z2+y0),
                             new Coordinate(z0, z1, z2),
                             new Color((int)Math.round(-200*normal), (int)Math.round(-200*normal), (int)Math.round(-200*normal)));
                 }
