@@ -99,7 +99,7 @@ public class ObjectUtils {
             for(int j=1; j<peaks.size()-1; j++){
                 int v2=peaks.get(j).getP()>0?peaks.get(j).getP()-1:coordinates.size()+peaks.get(j).getP();
                 int v1=peaks.get(j+1).getP()>0?peaks.get(j+1).getP()-1:coordinates.size()+peaks.get(j+1).getP();
-                double normal=MathTools.normDotProduct(MathTools.normal(coordinates.get(v0),coordinates.get(v1),coordinates.get(v2)),new Coordinate(0,0,1));
+                double normal=MathTools.normalizedDotProduct(MathTools.normal(coordinates.get(v0),coordinates.get(v1),coordinates.get(v2)),new Coordinate(0,0,1));
                 if(normal<0){
                     double z0=coordinates.get(v0).getZ()+zShift;
                     double z1=coordinates.get(v1).getZ()+zShift;
